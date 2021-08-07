@@ -30,7 +30,7 @@ Team Project for Advanced .NET Programming.
         6.) Choose ADO.NET Entity Data Model
         7.) Add Entity Framework Model to the project
 
-*This will help us manage the connection and queries that will be sent to the database.*
+**This will help us manage the connection and queries that will be sent to the database.*
 
 - Database First Approaches
     - Empty database: Design database with tools
@@ -40,3 +40,35 @@ Team Project for Advanced .NET Programming.
     - Track all database changes in source control
     - Empty Code First: Create C# classes and generate the database
     - Reverse Engineer: Turn exisitng database into C# classes
+
+## Enable Code First migrations
+
+- Create the database
+    - Tools tab
+    - NuGet Package Manager
+    - Package Manager Console
+
+    - Command line text: Enable-Migrations 
+          
+        - checks to see if database exists if not it will create it
+        - only needs to run one time for each project
+        
+    - Command line text: update-database
+        
+        - when it is finished PM prompt will appear
+        - unable to update: add a code-based migration
+
+    - Command line text: Add-Migration (Initial)
+        
+        - creates Initial database
+        - date and time stamp follow by underscore and the name given
+        - file creates a class with the name given
+        
+    - Command line text: update-database
+
+       - when it is finished PM prompt will appear
+       - unable to update: add a code-based migration
+        
+**Anytime there is a change to the C# classes that will effect the database: enable code-migration*
+
+    
