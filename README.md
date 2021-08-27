@@ -1,5 +1,5 @@
 # Accounts Payable Application
-Team Project for Advanced .NET Programming. 
+Side Project for Advanced .NET Programming. 
 
     Application that will have CRUD Functionality: 
 
